@@ -1,0 +1,64 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header {
+    background: #0097B2;
+    box-shadow: 1px 1px 5px 0 #AAA;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_title {
+    margin: 0;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.header_title a {
+    color: #DDEEFF;
+}
+
+.header_title a:hover {
+    color: #FFBC0D;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.header_menu_item {
+    padding: 1em 1em;
+}
+
+.header_menu_link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
