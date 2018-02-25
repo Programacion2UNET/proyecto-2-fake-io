@@ -5,6 +5,13 @@
 body {
     font-family: 'Roboto';
     margin: 0;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+98,b3bead+100 */
+background: rgb(252,255,244); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(252,255,244,1) 0%, rgba(223,229,215,1) 98%, rgba(179,190,173,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 98%,rgba(179,190,173,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 98%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 ul {
@@ -13,6 +20,11 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -61,4 +73,98 @@ a {
     display: flex;
     align-items: center;
     color: #FFF;
+}
+
+
+/*----------------------------------------------------------------*/
+
+.page_container  {
+    margin: 32px auto;
+}
+
+.login_form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.page_form { 
+    background: #FFF;
+    box-shadow: 1px 1px 5px 1px #DDD;
+}
+
+.form_header {
+    text-align: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #DDD;
+}
+
+.form_footer {
+    text-align: center;
+    padding: 16px 0;
+    border-top: 1px solid #DDD;
+}
+
+.form_title {
+    font-size: 1.3em;
+    color: #0097B2;
+}
+
+.form_body {
+    padding: 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_item {
+    padding: 8px 0;
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #565656;
+    align-items: center;
+}
+
+.form_item input {
+    padding: 4px;
+    border: 1px solid #DDD;
+}
+
+.button {
+    border: none;
+    padding: 8px 16px;
+    color: #EEE;
+}
+
+.button_primary {
+    background: #0097B2;
+    cursor: pointer;
+    transition: background .5s;
+    font-weight: bold;
+}
+
+.button_primary:hover {
+    background: #FFBC0D;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #0097B2;
+    width: 100%;
+    color: #DDD;
+    font-size: .95em;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: space-between;
+}   
+
+.footer_info a {
+    color: #FFBC0D;
 }
