@@ -6,10 +6,10 @@
             </h1>
             <ul class="header_menu">
                 <li class="header_menu_item"> 
-                    <a class="header_menu_link" href="#">Ingresar</a>
+                    <a class="header_menu_link" href="/ingreso">Ingresar</a>
                 </li>
                 <li class="header_menu_item"> 
-                    <a class="header_menu_link" href="#">Registro</a> 
+                    <a class="header_menu_link" href="/registro">Registro</a> 
                 </li>
             </ul>
         </nav>

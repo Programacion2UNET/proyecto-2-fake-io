@@ -14,4 +14,5 @@ require_once '../app/Models/Database.php';
 require_once '../app/Models/LoginModel.php';
 
 require_once '../app/Controllers/PageController.php';
+require_once '../app/Controllers/RegisterController.php';
 require_once '../app/Controllers/LoginController.php';
