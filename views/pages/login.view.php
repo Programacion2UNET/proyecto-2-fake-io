@@ -11,17 +11,23 @@
                 <div class="form_body">
                     <div class="form_item">
                         <label for="name"> Usuario </label>
-                        <input id="name" type="name" placeholder="Usuario">
+                        <input id="name" name="username" type="name" placeholder="">
                     </div>
                     <div class="form_item">
                         <label for="password"> Contraseña </label>
-                        <input id="password" type="password" placeholder="">
+                        <input id="password" name="password" type="password" placeholder="">
                     </div>
                 </div>
                 <div class="form_footer">
                     <input class="button button_primary" type="submit" value="Enviar">
                 </div>
             </form>
+            <?php 
+                
+                if(isset($error)) {
+                    echo '<div class="login_error">'.$error.'</div>';
+                }
+            ?>
         </div>
     </div>
 </section>

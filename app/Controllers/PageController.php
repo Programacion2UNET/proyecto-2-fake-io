@@ -8,8 +8,4 @@ class PageController {
     public function index() {
         View::render('pages/login', compact(''));
     }
-
-    public function login() {
-        
-    }
 }

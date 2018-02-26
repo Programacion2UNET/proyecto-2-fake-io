@@ -3,7 +3,7 @@
 define('DATABASE', array(
     'driver'    => 'mysql',
     'host'      => 'localhost',
-    'database'  => 'tienda',
+    'database'  => 'fifa_fake',
     'username'  => 'root',
     'password'  => '',
     'charset'   => 'utf8',

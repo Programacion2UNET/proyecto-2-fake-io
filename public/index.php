@@ -4,6 +4,7 @@ require_once '../config/app.php';
 
 use App\Libraries\Route;
 
+
 $url = substr($_SERVER['REQUEST_URI'], 1) ?? '';
 $route = ROUTES[$url] ?? false;
 

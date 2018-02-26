@@ -10,4 +10,8 @@ require_once 'routes.php';
 require_once '../app/Libraries/Route.php';
 require_once '../app/Libraries/View.php';
 
+require_once '../app/Models/Database.php';
+require_once '../app/Models/LoginModel.php';
+
 require_once '../app/Controllers/PageController.php';
+require_once '../app/Controllers/LoginController.php';
