@@ -25,17 +25,15 @@ class RegisterModel extends Database{
             "
         );
 
-        $manager->bindParam(':team_name', $data['team_name']);
-        $manager->bindParam(':code', $data['code']);
-        $manager->bindParam(':date_add', $data['date_add']);
-        $manager->bindParam(':address', $data['address']);
-        $manager->bindParam(':address', $data['email']);
-        $manager->bindParam(':website', $data['website']);
-        $manager->bindParam(':username', $data['username']);
-        $manager->bindParam(':password', $data['password']);
-
-        $manager->execute();
-
-        return $manager->fetch(\PDO::FETCH_ASSOC);
+        return $manager->execute(array(
+            'team_name' => $data['team_name'],
+            'code'      => $data['code'],
+            'date_add'  => $data['date_add'],
+            'address'   => $data['address'],
+            'email'     => $data['email'],
+            'website'   => $data['website'],
+            'username'  => $data['username'],
+            'password'  => $data['password'],
+        ));
     }
 }

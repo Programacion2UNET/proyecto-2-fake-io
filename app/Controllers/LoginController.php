@@ -21,12 +21,21 @@ class LoginController extends LoginModel {
             $user = LoginModel::loginModel($username, $password);
 
             if($user) {
-                echo "Hola";
+                $_SESSION['user'] = array(
+                    'team_name' => $user['team_name'],
+                    'code'      => $user['code'],
+                    'username'  => $user['username'],
+                    'role'      => $user['role']
+                );
+                header('Location: /inicio');
             } else {
-                $error = 'Credenciales inválidas';
-                View::render('pages/login', compact('error'));
-                exit;
+                header('Location: /ingreso/error');
             }
         }
+    }
+
+    public function error() {
+        $error = 'Credenciales inválidas';
+        View::render('pages/login', compact('error'));
     }
 }

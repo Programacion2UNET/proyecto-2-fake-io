@@ -5,7 +5,7 @@ namespace App\Models;
 class LoginModel extends Database{
     public function loginModel($username, $password) {
         $manager = $this->getDb()->prepare(
-            "SELECT team_name, code, username 
+            "SELECT team_name, code, username, role
              FROM   users 
              WHERE  username = :username AND password = :password");
 
@@ -14,5 +14,10 @@ class LoginModel extends Database{
         $manager->execute();
 
         return $manager->fetch(\PDO::FETCH_ASSOC);
+    }
+
+    public function logout() {
+        session_destroy();
+        header('Location: /');
     }
 }
